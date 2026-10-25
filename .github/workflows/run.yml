@@ -1,0 +1,11 @@
+name: Run Monoalphabetic Cipher
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile C file
+        run: gcc "Monoalphabetic_substitution_cipher.c" -o mono
+      - name: Run C file
+        run: ./mono
