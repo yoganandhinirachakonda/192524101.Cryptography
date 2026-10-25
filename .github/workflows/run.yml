@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Compile C file
         run: gcc "Monoalphabetic_substitution_cipher.c" -o mono
-            - name: Run C file
+      - name: Run C file
         run: echo "HELLO" | ./mono
